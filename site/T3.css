@@ -1,0 +1,82 @@
+body 
+{
+	margin: 0;
+	padding: 0;
+	background-image: url("img/bg1.png");
+}
+#d0
+{
+display: flex;
+justify-content: flex-start;
+position: absolute;
+}
+#d1
+{
+	display: flex;
+	justify-content: flex-end;
+}
+.logo img 
+{
+	margin:20px;
+	width: 80px;
+	height: 60px;
+	cursor: pointer;
+}
+.user img 
+{
+	margin: 20px;
+	width: 80px;
+	height: 60px;
+	cursor: pointer;
+}
+.b1
+{
+	margin-right: 30px;
+}
+button
+{
+	margin-top: 20px;
+	padding: 8px 20px;
+	width: 80px;
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 30px;
+	height: 50px;
+}
+button:hover
+{
+	cursor: pointer;
+	background: #Be2525;
+}
+div.form
+{
+    display: block;
+    text-align: center;
+
+}
+.box
+{
+	margin-top: 100px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    justify-content: space-evenly;
+}
+.box input 
+{
+	display: block;
+	border-radius: 10px;
+	padding: 8px 20px;
+	justify-content: space-evenly;
+}
+.box input[type="submit"]
+{
+	background: lightblue;
+	color: black;
+	cursor: pointer;
+	width: 100%;
+	font-weight: bold;
+}
