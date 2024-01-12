@@ -9,6 +9,7 @@ body{
     --txt-color:white;
     --time-bg-color:#333333;
     --common-bg-time: #ffffff;
+    --selected-color:red;
 }
 /* styles when light theme is selected */
 
@@ -183,6 +184,10 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 10px;
     cursor: pointer;
 }
+.btn-form input[type="submit"]:hover {
+    background-color: var(--selected-color);
+    color: var(--common-bg-time);
+}
 
 /* Styles for the hours element */
 .hours {
@@ -217,6 +222,16 @@ h1,h2,h3,h4,h5,h6,p{
     cursor: pointer;
     margin-left: 5px;
     width: 90%;
+}
+/* Styles for days on Hover */
+.days:hover{
+    background-color: var(--time-bg-color);
+    color: var(--common-bg-time);
+    transition: 0.4s ease-in-out;
+}
+.selected-day{
+    background-color: var(--selected-color);
+    color: var(--common-bg-time);
 }
 
 /* Styles for the section-2 container */
