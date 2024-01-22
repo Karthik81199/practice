@@ -1,0 +1,50 @@
+main{
+    margin-top: 12vh;
+}
+.light-theme{
+    --favbtn:red;
+}
+.card-img-top{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.btn-con{
+    margin-top: 2vh;
+}
+.checked{
+    cursor: pointer;
+}
+.checked{
+    color: var(--favbtn);
+}
+.fa-heart{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.fa-heart:hover{
+    animation: glow-heart;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+@keyframes glow-heart {
+    0%{
+        color: yellow;
+    }
+    50%{
+        color: orangered;
+    }
+    100%{
+        color: red;
+    }  
+}
+.dynamic-text{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.card-img-top{
+    cursor: pointer;
+}
+
