@@ -19,17 +19,17 @@ export default function Page1() {
 	// 	</div>
 	// );
 	return (
-		<section className="page1-sec-1 w-screen h-screen bg-pageBG overflow-y-auto">
-			<div className="mt-3 flex md:flex-row sm:flex-col md:justify-between w-[89vw]">
+		<section className="page1-sec-1 min-w-full h-screen bg-pageBG no-scrollbar overflow-y-scroll overflow-x-hidden">
+			<div className="mt-3 flex md:flex-row sm:flex-col flex-col md:justify-between w-full">
 				<Heading />
 				<Heading />
 				<Heading />
 			</div>
-			<div className="mt-6 flex md:flex-row sm:flex-col justify-evenly w-[89vw]">
+			<div className="mt-6 flex md:flex-row flex-col md:justify-evenly w-full">
 				<Graph />
 				<Table />
 			</div>
-			<div className="mt-6 flex md:flex-row sm:flex-col justify-evenly w-[89vw]">
+			<div className="mt-6 flex md:flex-row sm:flex-col flex-col justify-evenly w-full">
 				<Line />
 				<DonutChart />
 			</div>

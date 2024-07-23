@@ -16,9 +16,21 @@ module.exports = {
 				labelCl: "#0B0B0B",
 				buttonCl: "#0F8AD7",
 				submitbtn: "#02356A",
-				submitxt:"#FAFAFA",
+				submitxt: "#FAFAFA",
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		function ({ addUtilities }) {
+			addUtilities({
+				".no-scrollbar": {
+					"-ms-overflow-style": "none" /* IE and Edge */,
+					"scrollbar-width": "none" /* Firefox */,
+				},
+				".no-scrollbar::-webkit-scrollbar": {
+					display: "none" /* Safari and Chrome */,
+				},
+			});
+		},
+	],
 };
