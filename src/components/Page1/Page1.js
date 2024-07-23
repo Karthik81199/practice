@@ -4,6 +4,7 @@ import Graph from "./Graph";
 import Line from "./LineChart";
 import "../../assets/styles/tailwind.css";
 import Table from "./Table";
+import DonutChart from "./DonutChart";
 
 export default function Page1() {
 	// return (
@@ -30,6 +31,7 @@ export default function Page1() {
 			</div>
 			<div className="mt-6 flex md:flex-row sm:flex-col justify-evenly w-[89vw]">
 				<Line />
+				<DonutChart />
 			</div>
 		</section>
 	);

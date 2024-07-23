@@ -14,6 +14,22 @@ function Nav() {
 					/>
 				</div>
 				<div className="flex flex-nowrap ml-auto space-x-4">
+					<div className="absolute right-80 mt-3  flex items-center pr-3 pointer-events-none">
+						<svg
+							className="w-5 h-5 text-black-400"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
+								d="M21 21l-4.35-4.35M16.65 11.7A6.35 6.35 0 1111.7 6.35a6.35 6.35 0 015 5z"
+							/>
+						</svg>
+					</div>
 					<input
 						type="search"
 						id="default-search"
@@ -21,6 +37,7 @@ function Nav() {
 						placeholder="Search"
 						required
 					/>
+
 					<div className="circle w-12 h-12 border flex justify-center items-center rounded-full bg shadow-md">
 						<svg
 							width="24"

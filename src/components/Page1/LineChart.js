@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Line() {
 	return (
-		<div className="w-1/3 min-w-[773px] h-[379px] bg-white mt-4 rounded-[20px] ml-3">
+		<div className="w-1/3 min-w-[773px] h-[379px] bg-white mt-2 rounded-[20px] ml-3">
 			<svg
 				width="785"
 				height="391"
