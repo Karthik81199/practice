@@ -288,7 +288,7 @@ const Graph = () => {
 		<div className="w-1/3 min-w-[562px] h-[408px] bg-white mt-4 rounded-[20px] ml-3">
 			<div className="flex heading h-auto justify-between mx-3 mt-3">
 				<h3 className="font-nunito text-lg font-semibold">
-					Heading of Donut Chart
+					Heading of Bar Chart
 				</h3>
 				<button
 					id="dropdownDefaultButton"
