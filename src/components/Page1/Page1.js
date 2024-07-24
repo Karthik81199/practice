@@ -23,34 +23,22 @@ export default function Page1() {
 		// 		<DonutChart />
 		// 	</div>
 		// </section>
-		<section className="page1-sec-1 overflow-y-scroll no-scrollbar bg-pageBG w-[90%]">
-			<div className="mt-3 flex flex-wrap md:flex-nowrap md:justify-between w-full">
-				<div className="flex-shrink-0 md:w-1/3 sm:w-full">
+		<main className="w-full bg-pageBG overflow-auto">
+			<section className="page1-sec-1 overflow-y-auto">
+				<div className="px-4 flex lg:flex-row flex-col lg:justify-evenly">
+					<Heading />
+					<Heading />
 					<Heading />
 				</div>
-				<div className="flex-shrink-0 md:w-1/3 sm:w-full">
-					<Heading />
-				</div>
-				<div className="flex-shrink-0 md:w-1/3 sm:w-full">
-					<Heading />
-				</div>
-			</div>
-			<div className="mt-6 flex flex-wrap md:flex-nowrap md:justify-evenly w-full">
-				<div className="flex-shrink-0 md:w-1/2 sm:w-full">
+				<div className="mt-2 px-4 flex lg:flex-row flex-col lg:justify-evenly ">
 					<Graph />
-				</div>
-				<div className="flex-shrink-0 md:w-1/2 sm:w-full">
 					<Table />
 				</div>
-			</div>
-			<div className="mt-6 flex flex-wrap md:flex-nowrap md:justify-evenly w-full">
-				<div className="flex-shrink-0 md:w-1/2 sm:w-full">
+				<div className="mt-2 px-4 flex lg:flex-row flex-col lg:justify-evenly">
 					<LineChart />
-				</div>
-				<div className="flex-shrink-0 md:w-1/4 sm:w-full">
 					<DonutChart />
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 	);
 }

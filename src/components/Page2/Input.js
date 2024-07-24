@@ -14,7 +14,7 @@ function Input() {
 		setBlurred(false);
 	};
 	return (
-		<div className="w-[856px] h-[230px]">
+		<div className="container max-w-xs md:max-w-lg lg:max-w-2xl">
 			<div className="flex heading mt-3 ml-2">
 				<h3 className="font-nunito text-lg font-semibold">
 					Heading for the Content
@@ -33,7 +33,7 @@ function Input() {
 							type="text"
 							id="input1"
 							name="input1"
-							className="mt-1 w-[338px] h-[44px] gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
+							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
 						/>
 					</div>
@@ -48,7 +48,7 @@ function Input() {
 							type="text"
 							id="input2"
 							name="input2"
-							className="mt-1 w-[338px] h-[44px] gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
+							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
 						/>
 					</div>
@@ -63,7 +63,7 @@ function Input() {
 							type="text"
 							id="input1"
 							name="input1"
-							className="mt-1 w-[338px] h-[44px] gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
+							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
 						/>
 					</div>
@@ -78,7 +78,7 @@ function Input() {
 							type="text"
 							id="input1"
 							name="input1"
-							className="mt-1 w-[338px] h-[44px] gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
+							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
 						/>
 					</div>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Heading() {
 	return (
-		<div className="w-1/3 min-w-[374px] h-28 bg-white mt-4 rounded-[20px] ml-2 mr-9">
+		<div className="container max-w-xs sm:max-w-sm md:max-w-md bg-white mt-4 rounded-[20px] ml-2 mr-9">
 			<div className="heading-svg-con flex mt-3 justify-between">
 				<h3 className="font-nunito text-lg ml-4 font-semibold">Heading 1 </h3>
 				<div className="flex items-center rounded-full circle w-11 h-11 bg-pageHeading justify-center mr-6">

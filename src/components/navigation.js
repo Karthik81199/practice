@@ -5,40 +5,24 @@ import companylogo from "../assets/images/logo.png";
 function Nav() {
 	return (
 		<nav className={`bg-white w-screen`}>
-			<div className="w-full inline-flex items-center p-4">
+			<div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[1440px] items-center p-4 flex flex-row ">
 				<div className="companylogo flex flex-nowrap">
 					<img
 						src={companylogo}
-						className="w-44 min-w-40 h-14 mr-5"
+						className="lg:w-44 min-w-40 h-14 mr-5"
 						alt="companylogo"
 					/>
 				</div>
 				<div className="flex flex-nowrap ml-auto space-x-4">
-					<div className="absolute right-80 mt-3  flex items-center pr-3 pointer-events-none">
-						<svg
-							className="w-5 h-5 text-black-400"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								d="M21 21l-4.35-4.35M16.65 11.7A6.35 6.35 0 1111.7 6.35a6.35 6.35 0 015 5z"
-							/>
-						</svg>
-					</div>
 					<input
 						type="search"
 						id="default-search"
-						className="w-96 h-12 rounded-3xl border"
+						className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-3xl border"
 						placeholder="Search"
 						required
 					/>
 
-					<div className="circle w-12 h-12 border flex justify-center items-center rounded-full bg shadow-md">
+					<div className="circle w-20 h-10 border flex justify-center items-center rounded-full shadow-md">
 						<svg
 							width="24"
 							height="24"
@@ -52,7 +36,7 @@ function Nav() {
 							/>
 						</svg>
 					</div>
-					<div className="w-52 h-12 border rounded-3xl flex items-center">
+					<div className="hidden border rounded-3xl md:flex items-center shadow-md">
 						<img src={imagelogo} alt="user Logo" className="w-10 h-10 ml-2" />
 						<div className="user-info flex flex-col ml-4">
 							<h3 className="leading-none text-xl">Username</h3>

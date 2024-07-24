@@ -83,8 +83,8 @@ const LineChart = () => {
 	};
 
 	return (
-		<div className="w-1/3 min-w-[773px] h-[379px] bg-white mt-2 rounded-[20px] ml-3">
-			<div className="flex heading h-auto justify-between mx-3 mt-3">
+		<div className=" bg-white mt-2 rounded-[20px] ml-2 container max-w-xs md:max-w-lg lg:max-w-2xl md:max-h-md">
+			<div className="flex heading justify-between mx-3 mt-3">
 				<h3 className="font-nunito text-lg font-semibold">
 					Heading of Line Chart
 				</h3>
@@ -112,7 +112,9 @@ const LineChart = () => {
 					</svg>
 				</button>
 			</div>
-			<Line data={data} options={options} className="p-3" />
+			<div className="flex justify-center mt-6 h-2/4">
+				<Line data={data} options={options} />
+			</div>
 		</div>
 	);
 };

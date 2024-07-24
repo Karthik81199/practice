@@ -24,7 +24,7 @@ const DonutChart = () => {
 
 	return (
 		<>
-			<div className="min-w-[378px] h-[379px] bg-white mt-4 rounded-[20px] ml-3">
+			<div className="max-w-xs md:max-w-md lg:max-w-lg md:max-h-md bg-white mt-4 rounded-[20px] ml-3 shadow-md">
 				<div className="flex heading h-auto justify-between mx-3 mt-3">
 					<h3 className="font-nunito text-lg font-semibold">
 						Heading of Donut Chart
@@ -53,7 +53,7 @@ const DonutChart = () => {
 						</svg>
 					</button>
 				</div>
-				<div className="w-full h-64 mt-8">
+				<div className="w-full h-64 mt-8 px-3">
 					<Doughnut data={data} options={options} />
 				</div>
 			</div>
