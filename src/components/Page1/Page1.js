@@ -24,7 +24,7 @@ export default function Page1() {
 		// 	</div>
 		// </section>
 		<main className="w-full bg-pageBG overflow-auto">
-			<section className="page1-sec-1 overflow-y-auto">
+			<section className="page1-sec-1">
 				<div className="px-4 flex lg:flex-row flex-col lg:justify-evenly">
 					<Heading />
 					<Heading />

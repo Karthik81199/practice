@@ -11,7 +11,7 @@ function Table() {
 					<u>View All</u>
 				</h3>
 			</div>
-			<div className="container max-w-xs sm:text-sm text-xs md:text-md sm:max-w-sm md:max-w-md lg:max-w-[1440px] mt-2 px-2 flex justify-center">
+			<div className="container max-w-xs sm:text-sm text-xs md:text-md sm:max-w-sm md:max-w-md lg:max-w-[1440px] mt-2 lg:mt-10 md:mt-4 px-2 flex justify-center">
 				<table>
 					<thead>
 						<tr className="flex rounded-xl  bg-tableColor justify-center items-center font-nunito lg:text-lg">

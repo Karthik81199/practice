@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 function Input() {
 	const [isPopupVisible, setPopupVisible] = useState(false);
@@ -13,15 +13,28 @@ function Input() {
 		setPopupVisible(false);
 		setBlurred(false);
 	};
+	const fileInputRef = useRef(null);
+
+	const handleButtonClick = () => {
+		fileInputRef.current.click();
+	};
+
+	const handleFileChange = (event) => {
+		const file = event.target.files[0];
+		if (file) {
+			console.log("Selected file:", file);
+			// Handle file upload logic here
+		}
+	};
 	return (
-		<div className="container max-w-xs md:max-w-lg lg:max-w-2xl">
+		<div className="container max-w-xs md:max-w-lg lg:max-w-[1440px] ">
 			<div className="flex heading mt-3 ml-2">
 				<h3 className="font-nunito text-lg font-semibold">
 					Heading for the Content
 				</h3>
 			</div>
 			<form method="post" onSubmit={handleSubmit}>
-				<div className="flex justify-evenly flex-wrap mt-7 ml-7">
+				<div className="flex justify-evenly flex-wrap mt-7 ml-7 max-w-lg">
 					<div className="flex-1 mb-4">
 						<label
 							htmlFor="input1"
@@ -33,8 +46,9 @@ function Input() {
 							type="text"
 							id="input1"
 							name="input1"
-							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
+							className="mt-1 max-w-sm md:max-w-lg lg:max-w-xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
+							required
 						/>
 					</div>
 					<div className="flex-1">
@@ -48,8 +62,9 @@ function Input() {
 							type="text"
 							id="input2"
 							name="input2"
-							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
+							className="mt-1 max-w-sm md:max-w-lg lg:max-w-xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
+							required
 						/>
 					</div>
 					<div className="flex-1">
@@ -61,25 +76,27 @@ function Input() {
 						</label>
 						<input
 							type="text"
-							id="input1"
-							name="input1"
+							id="input3"
+							name="input3"
 							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
+							required
 						/>
 					</div>
 					<div className="flex-1">
 						<label
-							htmlFor="input1"
+							htmlFor="input4"
 							className="block text-sm font-semibold text-labelCl"
 						>
 							Input field 4
 						</label>
 						<input
 							type="text"
-							id="input1"
-							name="input1"
+							id="input4"
+							name="input4"
 							className="mt-1 max-w-sm md:max-w-lg lg:max-w-2xl gap-3 border-[2px] pt-2.5 pr-0 pb-2.5 pl-4 rounded-[12px]"
 							placeholder="Enter the value"
+							required
 						/>
 					</div>
 				</div>
@@ -87,9 +104,16 @@ function Input() {
 					<h3 className="font-nunito text-lg font-semibold text-labelCl">
 						Heading for the Content
 					</h3>
+					<input
+						type="file"
+						ref={fileInputRef}
+						onChange={handleFileChange}
+						style={{ display: "none" }}
+					/>
 					<button
 						type="Button"
 						className="w-28 mt-5 h-10 border-[2px] border-buttonCl rounded-2xl"
+						onClick={handleButtonClick}
 					>
 						Browse
 					</button>
