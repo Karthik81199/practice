@@ -12,3 +12,6 @@
         scrollbar-width: none;
     }
 }
+::placeholder {
+    font-weight: bold;
+}

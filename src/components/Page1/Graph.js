@@ -285,7 +285,7 @@ const Graph = () => {
 	};
 
 	return (
-		<div className="bg-white mt-4 rounded-[20px] ml-3 container max-w-xs md:max-w-lg lg:max-w-2xl">
+		<div className="bg-white mt-4 rounded-[20px] ml-3 container max-w-xs md:max-w-lg lg:max-w-2xl shadow-custom-blue p-3">
 			<div className="flex heading h-auto justify-between mx-3 mt-3">
 				<h3 className="font-nunito text-lg font-semibold">
 					Heading of Bar Chart

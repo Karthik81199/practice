@@ -18,6 +18,9 @@ module.exports = {
 				submitbtn: "#02356A",
 				submitxt: "#FAFAFA",
 			},
+			boxShadow: {
+				"custom-blue": "0px 2px 6px 0px rgba(9, 121, 187, 0.1)",
+			},
 		},
 	},
 	plugins: [

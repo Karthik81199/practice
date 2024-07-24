@@ -17,12 +17,12 @@ function Nav() {
 					<input
 						type="search"
 						id="default-search"
-						className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-3xl border"
+						className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-3xl border shadow-custom-blue placeholder:font-bold font-nunito"
 						placeholder="Search"
 						required
 					/>
 
-					<div className="circle w-20 h-10 border flex justify-center items-center rounded-full shadow-md">
+					<div className="circle w-20 h-10 border flex justify-center items-center rounded-full shadow-custom-blue">
 						<svg
 							width="24"
 							height="24"
@@ -36,14 +36,14 @@ function Nav() {
 							/>
 						</svg>
 					</div>
-					<div className="hidden border rounded-3xl md:flex items-center shadow-md">
+					<div className="hidden border rounded-3xl md:flex items-center shadow-custom-blue">
 						<img src={imagelogo} alt="user Logo" className="w-10 h-10 ml-2" />
 						<div className="user-info flex flex-col ml-4">
 							<h3 className="leading-none text-xl">Username</h3>
 							<h3 className="leading-1">Position</h3>
 						</div>
 						<svg
-							className="ml-4"
+							className="ml-2"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
